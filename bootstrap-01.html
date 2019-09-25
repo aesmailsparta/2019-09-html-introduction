@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+-->
+	<link rel="stylesheet" href="assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/css/mycss.css" />
+	
+    <title>Hello, world!</title>
+	<style>
+	</style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	<div class="container" >
+		<h1 id="mainHeader" >Bootstrap First Page</h1>
+	</div>
+	<div class="container" >
+		<table class="table table-border table-striped table-hover">
+		  <thead>
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">First</th>
+			  <th scope="col">Last</th>
+			  <th scope="col">Handle</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Mark</td>
+			  <td>Otto</td>
+			  <td>@mdo</td>
+			</tr>
+			<tr>
+			  <th scope="row">2</th>
+			  <td>Jacob</td>
+			  <td>Thornton</td>
+			  <td>@fat</td>
+			</tr>
+			<tr>
+			  <th scope="row">3</th>
+			  <td>Larry</td>
+			  <td>the Bird</td>
+			  <td>@twitter</td>
+			</tr>
+			<tr>
+			  <th scope="row">4</th>
+			  <td>Mark</td>
+			  <td>Otto</td>
+			  <td>@mdo</td>
+			</tr>
+			<tr>
+			  <th scope="row">5</th>
+			  <td>Jacob</td>
+			  <td>Thornton</td>
+			  <td>@fat</td>
+			</tr>
+			<tr>
+			  <th scope="row">6</th>
+			  <td>Larry</td>
+			  <td>the Bird</td>
+			  <td>@twitter</td>
+			</tr>
+		  </tbody>
+		</table>
+		
+		
+	<div id="div01" >
+	
+	</div>
+	<div id="div02" >
+	
+	</div>
+	<div id="showmethetime" >
+	
+	</div>
+	<div id="showMyArray" >
+	
+	</div>
+	
+	
+	</div>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script>
+		//alert("Hello");
+		//console.log("hello");
+		
+		//document.getElementByID('div01').innerHTML = "new message";
+		
+		$(document).ready(function(){
+			//alert("hello");
+			
+			//setTimeout(doThis, 2000);
+			setInterval(showTime, 1000);
+			
+			$("#div02").html("This is a jQuery Message!");
+			
+			function doThis(){
+				$("#div02").html("This is an addition after 2 seconds");
+			}
+			
+			var globalfontsize = 3;
+			var globalIncrement = 0.1;
+			
+			function showTime(){
+				var d = new Date();
+				
+				///globalfontsize += globalIncrement;
+				
+				///if(globalfontsize > 4) globalIncrement = -0.1;
+				///if(globalfontsize < 0) globalIncrement = 0.1;
+				
+				var hr = d.getHours();
+				var min = d.getMinutes();
+				var sec = d.getSeconds();
+				
+				$("#showmethetime").html(hr + ":" + min + ":" + sec);
+				
+				$("#showmethetime").css("font-size" , globalfontsize + "em");
+				
+			}
+			
+			var myArray = [0,1,2,3,4,5];
+			
+			for(var i = 0; i < myArray.length; i++){
+			
+				$("#showMyArray").append("<p>" + myArray[i] + "</p>");
+			
+			}
+		});
+		
+	</script>
+ </body>
+</html>
