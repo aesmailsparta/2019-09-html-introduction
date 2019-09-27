@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Nav</title>
+    <style>
+			h2{
+				font-weight:bold;
+				color:#7DFFFB;
+				font-family:Helvetica;
+			}
+			
+			nav.FlexContainer{
+				padding:0;
+				width:80vw;
+				margin:auto;
+			}
+			
+			nav.FlexContainer a{
+				display:block;
+				height:100%;
+				padding:3vmin;
+				font-family:Helvetica;
+				text-decoration:none;
+				background-color:#a1ebc6;
+				color:white;
+				cursor:pointer;
+			}
+
+			nav.FlexContainer a:hover{
+				display:block;
+				height:100%;
+				padding:3vmin;
+				font-family:Helvetica;
+				text-decoration:none;
+				background-color:#8AFFB9;
+				color:white;
+			}
+			
+			nav.FlexContainer a:active{
+				transform: scale(0.9);
+			}
+			
+			nav.FlexContainer div{
+				height:100%;
+				padding:4vmin;
+			}
+
+			.FlexContainer{
+			    display: flex;
+				justify-content: space-evenly;
+
+				text-justify: distribute;
+				background-color:#72E8C3;
+				padding:20px;
+				margin-bottom:50px;
+			}
+			
+			.GridContainer{
+				display: grid;
+				grid-template-columns: auto auto auto;
+				grid-template-rows: auto auto auto;
+				grid-column-gap: 20px;
+				grid-row-gap: 20px;
+				padding: 20px;
+				background-color:#72E8C3;
+			}
+			
+			.GridContainer .Box{
+				height: 200px;
+				width: 200px;
+				line-height: 200px;
+				place-self: center;
+				text-align: center;
+			}
+			
+			.Box{
+				height:100px;
+				width:100px;
+				text-align:center;
+				line-height:50px;
+				background-color: #8AFFB9;
+			}
+			
+			li{
+				display:inline-block;
+				list-style: none;
+			}
+
+            .flex-container {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+
+            .flex-item {
+                background: tomato;
+                padding: 5px;
+                width: 200px;
+                height: 150px;
+                margin-top: 10px;
+                line-height: 150px;
+                color: white;
+                font-weight: bold;
+                font-size: 3em;
+                text-align: center;
+            }
+		</style>
+</head>
+<body>
+        <nav class="FlexContainer" >
+                <a>Home</a>
+                <a>News</a>
+                <a>Blog</a>
+                <a>About</a>
+                <a>Contact</a>
+            </nav>
+            
+            <h2>Bike Images</h2>
+            <div class="GridContainer">
+                <div class="Box">Box 1</div>
+                <div class="Box">Box 2</div>
+                <div class="Box">Box 3</div>
+                <div class="Box">Box 4</div>
+                <div class="Box">Box 5</div>
+                <div class="Box">Box 6</div>
+                <div class="Box">Box 7</div>
+                <div class="Box">Box 8</div>
+                <div class="Box">Box 9</div>
+            </div>
+            <ul class="flex-container">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+                <li class="flex-item">4</li>
+                <li class="flex-item">5</li>
+                <li class="flex-item">6</li>
+            </ul>
+
+
+            <script>
+            
+            </script>
+</body>
+</html>
