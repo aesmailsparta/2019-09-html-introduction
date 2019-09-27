@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FlexBox and Grid Example</title>
+		<style>
+			h2{
+				font-weight:bold;
+				color:#7DFFFB;
+				font-family:Helvetica;
+			}
+			
+			nav.FlexContainer{
+				padding:0;
+				width:80vw;
+				margin:auto;
+			}
+			
+			nav.FlexContainer a{
+				display:block;
+				height:100%;
+				padding:3vmin;
+				font-family:Helvetica;
+				text-decoration:none;
+				background-color:#a1ebc6;
+				color:white;
+				cursor:pointer;
+			}
+
+			nav.FlexContainer a:hover{
+				display:block;
+				height:100%;
+				padding:3vmin;
+				font-family:Helvetica;
+				text-decoration:none;
+				background-color:#8AFFB9;
+				color:white;
+			}
+			
+			nav.FlexContainer a:active{
+				transform: scale(0.9);
+			}
+			
+			nav.FlexContainer div{
+				height:100%;
+				padding:4vmin;
+			}
+
+			.FlexWrapper{
+				display: flex;
+				justify-content: space-evenly;
+				background-color:#72E8C3;
+				padding:20px;
+				margin-bottom:50px;
+			}
+
+			.FlexContainer{
+				display: flex;
+				justify-content: space-evenly;
+
+				text-justify: distribute;
+				background-color:#72E8C3;
+				padding:20px;
+				margin-bottom:50px;
+			}
+			
+			.GridContainer{
+				display: grid;
+				grid-template-columns: auto auto auto;
+				grid-template-rows: auto auto auto;
+				grid-column-gap: 20px;
+				grid-row-gap: 20px;
+				padding: 20px;
+				background-color:#72E8C3;
+			}
+			
+			.GridContainer .Box{
+				height: 200px;
+				width: 200px;
+				line-height: 200px;
+				place-self: center;
+				text-align: center;
+			}
+			
+			.Box{
+				height:100px;
+				width:100px;
+				text-align:center;
+				line-height:50px;
+				background-color: #8AFFB9;
+			}
+			
+			li{
+				display:inline-block;
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="FlexContainer" >
+			<a>Home</a>
+			<a>News</a>
+			<a>Blog</a>
+			<a>About</a>
+			<a>Contact</a>
+		</nav>
+		
+		<h2>FLEXBOX</h2>
+		<div class="FlexWrapper" >
+			<div class="FlexContainer" >
+				<div class="Box">Box 1</div>
+				<div class="Box">Box 2</div>
+				<div class="Box">Box 3</div>
+				<div class="Box">Box 4</div>
+				<div class="Box">Box 5</div>
+				<div class="Box">Box 6</div>
+				<div class="Box">Box 7</div>
+				<div class="Box">Box 8</div>
+				<div class="Box">Box 9</div>
+			</div>
+		</div>
+		
+		<h2>FLEXBOX</h2>
+		<div class="FlexContainer" >
+			<div class="Box">Box 1</div>
+			<div class="Box">Box 2</div>
+			<div class="Box">Box 3</div>
+			<div class="Box">Box 4</div>
+			<div class="Box">Box 5</div>
+			<div class="Box">Box 6</div>
+			<div class="Box">Box 7</div>
+			<div class="Box">Box 8</div>
+			<div class="Box">Box 9</div>
+		</div>
+		
+		<h2>GRID</h2>
+		<div class="GridContainer">
+			<div class="Box">Box 1</div>
+			<div class="Box">Box 2</div>
+			<div class="Box">Box 3</div>
+			<div class="Box">Box 4</div>
+			<div class="Box">Box 5</div>
+			<div class="Box">Box 6</div>
+			<div class="Box">Box 7</div>
+			<div class="Box">Box 8</div>
+			<div class="Box">Box 9</div>
+		</div>
+	</body>
+</html>

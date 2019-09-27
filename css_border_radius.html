@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Border Radius</title>
+    <style>
+        div{
+            text-align:center;
+            margin-left:100px;
+            animation: GrowAndShrink 2.5s linear infinite;
+            height:100px;
+            width:250px;
+            background-color:aquamarine;
+            box-shadow: 0 3px 0 black;
+        }
+
+        div:hover{
+            cursor:pointer;
+        }
+
+        div:active{
+            margin-top:26px;
+            box-shadow:none;
+        }
+
+        @keyframes GrowAndShrink {
+            0%,50%,100%{
+                transform: scale(1);
+            }    
+            25%,75%{
+                transform: scale(1.3);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Border Radius</h1>
+
+
+    <div></div>
+</body>
+</html>
