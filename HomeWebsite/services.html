@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            padding:0;
+            margin:0;
+        }
+
+        header{
+            height:80px;
+            background-color: #baffc9;
+        }
+
+        nav{
+            height:100%;
+        }
+
+        .MainNav{
+            display: flex;    
+            justify-content: flex-end;
+            align-items: flex-end;
+            list-style: none;
+            height:100%;
+            width: 80vw;
+            margin: auto;
+            font-family: Helvetica;
+        }
+
+        .MainNav a{
+            text-decoration:none;
+            display:block;
+            color:white;
+        }
+
+        .MainNav a:hover{
+            transition-duration: 1s;
+            background-color:rgba(45,45,45,0.1);
+        }
+
+        .MainNav a:hover li:after{
+            content:"";
+            position:absolute;
+            text-align:center;
+            bottom:0;
+            left:0;
+            height:5px;
+            width:100%;
+            background-color:white;
+            transform-origin:center;
+            animation: widthGrow 0.25s linear;
+        }
+
+        .MainNav a li{
+            position:relative;
+            padding:3vmin;
+        }
+
+        @keyframes widthGrow {
+            0%{
+                transform: scaleX(0);
+            }
+            100%{
+                transform: scaleX(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="MainNav"> 
+                <a href="#" ><li>Home</li></a>
+                <a href="#" ><li>Services</li></a>
+                <a href="#" ><li>Gallery</li></a>
+                <a href="#" ><li>About</li></a>
+                <a href="#" ><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
